@@ -2,23 +2,22 @@ import React from "react";
 
 const Profile: React.FC = () => {
     // 학력 정보 데이터
-    const majorData = [
+    const educationData = [
         {
             title: "Computer Engineering",
             institution: "Jeju National University",
             department: "제주대학교 컴퓨터공학전공",
             date: "2018.03 ~ 2024.02",
         },
-        // 다른 학력 정보도 여기에 추가할 수 있습니다.
     ];
-    // 학력 정보 데이터
+
+    // 학력 정보 데이터 (졸업 정보)
     const graduatedData = [
         {
             title: "Jeju National University High School",
             department: "제주사대부고",
             date: "2015.03 ~ 2018.02",
         },
-        // 다른 학력 정보도 여기에 추가할 수 있습니다.
     ];
 
     // 연락 정보 데이터
@@ -38,7 +37,6 @@ const Profile: React.FC = () => {
             text: "career.programmers.co.kr/job_profiles",
             link: "https://career.programmers.co.kr/pr/ysw991106_6466",
         },
-        // 다른 연락 정보도 여기에 추가할 수 있습니다.
     ];
 
     return (
@@ -92,12 +90,12 @@ const Profile: React.FC = () => {
                     <div className="grid justify-start w-max">
                         <p className="text-white ml-4 mt-5 text-xl">Education</p>
                     </div>
-                    {majorData.map((item, index) => (
+                    {educationData.map((item, index) => (
                         <div className="grid justify-start w-max" key={index}>
                             <p className="text-white">{item.title}</p>
-                            <p className="text-gray-300 ml-8">{item.institution}</p>
-                            <p className="text-gray-300 ml-8">{item.department}</p>
-                            <p className="text-gray-300 ">{item.date}</p>
+                            <p className="text-gray-300 ml-4">{item.institution}</p>
+                            <p className="text-gray-300 ml-4">{item.department}</p>
+                            <p className="text-gray-300">{item.date}</p>
                         </div>
                     ))}
                     {graduatedData.map((item, index) => (
