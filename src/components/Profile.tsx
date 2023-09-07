@@ -14,7 +14,8 @@ const Profile: React.FC = () => {
     // 학력 정보 데이터 (졸업 정보)
     const graduatedData = [
         {
-            title: "Jeju National University High School",
+            title: "Graduated",
+            institution: "Jeju National University High School",
             department: "제주사대부고",
             date: "2015.03 ~ 2018.02",
         },
@@ -85,26 +86,29 @@ const Profile: React.FC = () => {
                     ))}
                 </div>
 
-                <div className="grid justify-start gap-2 w-max">
+                <div className="gap-2 w-max">
                     {/* 학력 정보 */}
                     <div className="grid justify-start w-max">
                         <p className="text-white ml-4 mt-5 text-xl">Education</p>
                     </div>
-                    {educationData.map((item, index) => (
-                        <div className="grid justify-start w-max" key={index}>
-                            <p className="text-white">{item.title}</p>
-                            <p className="text-gray-300 ml-4">{item.institution}</p>
-                            <p className="text-gray-300 ml-4">{item.department}</p>
-                            <p className="text-gray-300">{item.date}</p>
-                        </div>
-                    ))}
-                    {graduatedData.map((item, index) => (
-                        <div className="grid justify-start w-max ml-4" key={index}>
-                            <p className="text-white w-max">{item.title}</p>
-                            <p className="text-gray-300 ml-4 w-max">{item.department}</p>
-                            <p className="text-gray-300 ml-4 w-max">{item.date}</p>
-                        </div>
-                    ))}
+                    <div className="ml-2">
+                        {educationData.map((item, index) => (
+                            <div className="grid justify-start w-max" key={index}>
+                                <p className="text-white">{item.title}</p>
+                                <p className="text-gray-300 ml-4">{item.institution}</p>
+                                <p className="text-gray-300 ml-4">{item.department}</p>
+                                <p className="text-gray-300">{item.date}</p>
+                            </div>
+                        ))}
+                        {graduatedData.map((item, index) => (
+                            <div className="grid justify-start w-max" key={index}>
+                                <p className="text-white w-max ml-3">{item.title}</p>
+                                <p className="text-gray-300 ml-5">{item.institution}</p>
+                                <p className="text-gray-300 ml-5 w-max">{item.department}</p>
+                                <p className="text-gray-300 ml-6 w-max">{item.date}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
