@@ -26,35 +26,40 @@ function Contact() {
     );
 }
 
+function Education() {
+    return (
+        <div className="card-body grid">
+            <h2 className="card-title">Education</h2>
+            <div className="flex justify-start">
+                <div className="flex gap-2 w-full">
+                    <img src="/resume/images/graduation-cap.png" alt="graduation" className="w-6 h-6"/>
+                    <div className="grid justify-start w-full">
+                        <div className="flex justify-start w-full">학사</div>
+                        <div className="flex justify-start w-full">제주대학교, 컴퓨터공학전공</div>
+                        <div className="flex justify-start w-full">2018 ~ 2024</div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex justify-start">
+                <div className="flex gap-2 w-full">
+                    <img src="/resume/images/graduation-cap.png" alt="graduation" className="w-6 h-6"/>
+                    <div>
+                        <div className="flex justify-start w-full">고등학교</div>
+                        <div className="flex justify-start w-full">제주사범대학부설고등학교</div>
+                        <div className="flex justify-start w-full">2015 ~ 2018</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 const Info: React.FC = () => {
     return (
-        <div className="card w-full bg-sky-400 text-white">
+        <div className="card w-full h-full bg-sky-400 text-white">
             <Contact/>
-            <div className="card-body grid">
-                <h2 className="card-title">Education</h2>
-                <div className="flex justify-start">
-                    <div className="flex gap-2 w-full">
-                        <img src="/resume/images/graduation-cap.png" alt="graduation" className="w-6 h-6"/>
-                        <div className="grid justify-start w-full">
-                            <div className="flex justify-start w-full">학사</div>
-                            <div className="flex justify-start w-full">제주대학교, 컴퓨터공학전공</div>
-                            <div className="flex justify-start w-full">2018 ~ 2024</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="flex justify-start">
-                    <div className="flex gap-2 w-full">
-                        <img src="/resume/images/graduation-cap.png" alt="graduation" className="w-6 h-6"/>
-                        <div>
-                            <div className="flex justify-start w-full">고등학교</div>
-                            <div className="flex justify-start w-full">제주사범대학부설고등학교</div>
-                            <div className="flex justify-start w-full">2015 ~ 2018</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <Education/>
         </div>
     );
 };

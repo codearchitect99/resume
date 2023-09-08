@@ -5,9 +5,10 @@ import Info from "./component/Info";
 const AboutMe: React.FC = () => {
     return (
         <>
-            <div className="grid w-full gap-2">
-                <Profile />
-                <Info />
+            <div className="w-full">
+                <Profile/>
+                <div className="mt-2" />
+                <Info/>
             </div>
         </>
     );
