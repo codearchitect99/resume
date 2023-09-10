@@ -57,7 +57,7 @@ function Education() {
 
 const Info: React.FC = () => {
     return (
-        <div className="card w-full h-full bg-sky-400 text-white">
+        <div className="card w-full h-full bg-sky-600 text-white">
             <Contact/>
             <Education/>
         </div>

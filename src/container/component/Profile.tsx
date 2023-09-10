@@ -3,7 +3,7 @@ import React from "react";
 const Profile: React.FC = () => {
     return (
         <>
-            <div className="card bg-sky-500 text-white">
+            <div className="card bg-sky-400 text-white">
                 <div className="card-body">
                     <div className="flex justify-center w-full">
                         <div className="avatar">
