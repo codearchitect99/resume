@@ -40,6 +40,7 @@ function Education() {
                         <div className="flex justify-start w-full">: 컴퓨터공학전공</div>
                         <div className="flex justify-start w-full">복수전공</div>
                         <div className="flex justify-start w-full">: 빅데이터융합전공(연계)</div>
+                        <div className="flex justify-start w-full">카카오트랙 이수</div>
                     </div>
                 </div>
             </div>

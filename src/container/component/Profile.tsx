@@ -12,8 +12,8 @@ const Profile: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                        <div className="card-title w-auto justify-center">Seongwon Yang</div>
-                        <div className="card-title w-auto justify-center tracking-widest">양  성  원</div>
+                    <div className="card-title w-auto justify-center">Seongwon Yang</div>
+                    <div className="card-title w-auto justify-center tracking-widest">양 성 원</div>
                     <p>Web Developer</p>
                 </div>
             </div>

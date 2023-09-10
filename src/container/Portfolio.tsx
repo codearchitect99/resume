@@ -40,6 +40,12 @@ function Skills() {
                     <p>Trello</p>
                     <p>Agit</p>
                 </div>
+                <div className="w-full">
+                    <p className="font-semibold">OS</p>
+                    <p>Mac</p>
+                    <p>Ubuntu</p>
+                    <p>Window</p>
+                </div>
             </div>
         </div>
     </div>;
