@@ -34,9 +34,12 @@ function Education() {
                 <div className="flex gap-2 w-full">
                     <img src="/resume/images/graduation-cap.png" alt="graduation" className="w-6 h-6"/>
                     <div className="grid justify-start w-full">
-                        <div className="flex justify-start w-full">학사</div>
-                        <div className="flex justify-start w-full">제주대학교, 컴퓨터공학전공</div>
+                        <div className="flex justify-start w-full">제주대학교</div>
                         <div className="flex justify-start w-full">2018 ~ 2024</div>
+                        <div className="flex justify-start w-full">주전공</div>
+                        <div className="flex justify-start w-full">: 컴퓨터공학전공</div>
+                        <div className="flex justify-start w-full">복수전공</div>
+                        <div className="flex justify-start w-full">: 빅데이터융합전공(연계)</div>
                     </div>
                 </div>
             </div>
@@ -45,7 +48,6 @@ function Education() {
                 <div className="flex gap-2 w-full">
                     <img src="/resume/images/graduation-cap.png" alt="graduation" className="w-6 h-6"/>
                     <div>
-                        <div className="flex justify-start w-full">고등학교</div>
                         <div className="flex justify-start w-full">제주사범대학부설고등학교</div>
                         <div className="flex justify-start w-full">2015 ~ 2018</div>
                     </div>
@@ -57,7 +59,7 @@ function Education() {
 
 const Info: React.FC = () => {
     return (
-        <div className="card w-full h-full bg-sky-600 text-white">
+        <div className="card w-full h-full bg-sky-400 text-white">
             <Contact/>
             <Education/>
         </div>
